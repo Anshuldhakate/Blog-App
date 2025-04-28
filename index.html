@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#post1">Post 1</a></li>
+                <li><a href="#post2">Post 2</a></li>
+                <li><a href="#post3">Post 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Blog Post 1 -->
+        <section id="post1" class="blog-post">
+            <h2>"The Power of Consistency in Personal Growth"</h2>
+            <p class="date">Published on: April 28, 2025</p>
+            <img src="./blog1.jpg" alt="Blog Image 1">
+            <p>Success doesn't happen overnight. It's a result of consistent efforts over time. Whether you're learning a new skill, building a career, or improving your health, showing up every day and doing the work will create exponential results. Start small, stay steady, and watch how your life transforms!</p>
+
+
+            <div class="comments">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form" onsubmit="addComment(event, 'comments-list-1')">
+                    <input type="text" placeholder="Your Name" required class="name-input">
+                    <textarea placeholder="Your Comment" required class="comment-input"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <ul id="comments-list-1" class="comments-list"></ul>
+            </div>
+        </section>
+
+        <!-- Blog Post 2 -->
+        <section id="post2" class="blog-post">
+            <h2>"Why Learning to Code in 2025 is a Superpower"</h2>
+            <p class="date">Published on: April 25, 2025</p>
+            <img src="./blog2.jpg" alt="Blog Image 2">
+            <p>In today’s digital world, coding isn't just for software engineers. It teaches you how to think logically, solve problems creatively, and bring ideas to life. With AI, automation, and web apps booming, coding is no longer optional — it's the language of the future. Start today, even with basic HTML and JavaScript!</p>
+
+
+            <div class="comments">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form" onsubmit="addComment(event, 'comments-list-2')">
+                    <input type="text" placeholder="Your Name" required class="name-input">
+                    <textarea placeholder="Your Comment" required class="comment-input"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <ul id="comments-list-2" class="comments-list"></ul>
+            </div>
+        </section>
+
+        <!-- Blog Post 3 -->
+        <section id="post3" class="blog-post">
+            <h2>"5 Simple Habits to Boost Your Mental Health"</h2>
+            <p class="date">Published on: April 20, 2025</p>
+            <img src="blog3.jpg" alt="Blog Image 3">
+            <p>Self-care is essential, not selfish. Incorporate habits like daily gratitude, mindful breathing, regular exercise, digital detoxes, and staying connected with loved ones. Small habits create big changes. Your mind is your greatest asset — take care of it!</p>
+
+
+            <div class="comments">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form" onsubmit="addComment(event, 'comments-list-3')">
+                    <input type="text" placeholder="Your Name" required class="name-input">
+                    <textarea placeholder="Your Comment" required class="comment-input"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <ul id="comments-list-3" class="comments-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
